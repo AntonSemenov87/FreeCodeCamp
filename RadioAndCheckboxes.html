@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Checkboxes and Radio buttons</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div>
+        <p>When a form gets submitted, the data is sent to the server and includes entries for the options selected.
+            Inputs of type radio and checkbox report their values from the value attribute.</p>
+        <p>When the user submits the form with the indoor option selected, the form data will include the line: indoor-outdoor=indoor. This is from the name and value attributes of the "indoor" input.
+            If you omit the value attribute, the submitted form data uses the default value, which is on. In this scenario, if the user clicked the "indoor" option and submitted the form, the resulting form data would be indoor-outdoor=on, which is not useful. So the value attribute needs to be set to something to identify the option.</p>
+    </div>
+
+    <div>
+        <h3>Please choose waterpark you're interested in:</h3>
+            <form>
+                <label for="indoor">
+                    <input id="indoor" value="indoor" type="radio" name="indoor-outdoor" checked> Indoor
+                </label>
+                <label for="outdoor">
+                    <input id="outdoor" value="outdoor" type="radio" name="indoor-outdoor"> Outdoor
+                </label>
+                <button type="submit">Submit</button>
+            </form>
+    </div>
+
+</body>
+</html>
